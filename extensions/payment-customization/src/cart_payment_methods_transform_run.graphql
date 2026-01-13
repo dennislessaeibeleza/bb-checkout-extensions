@@ -1,0 +1,14 @@
+query CartPaymentMethodsTransformRunInput {
+  shop {
+    paymentCustomization: metafield(
+      namespace: "hidratei_checkout_extensions"
+      key: "payment_customization"
+    ) {
+      jsonValue
+    }
+  }
+  paymentMethods {
+    id
+    name
+  }
+}
